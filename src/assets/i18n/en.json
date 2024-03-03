@@ -1,3 +1,24 @@
 {
-    "lang": "en"
+    "lang": "en",
+    "AboutMeTitle": "Hi, i'm Mattia Iaria!",
+
+    "AboutMeDesc1": "I was born in Italy in 30/11/2003 and love the world of computer science and software development",
+    "AboutMeDesc2": "My work experience in this field began in March 2023, and I immediately became passionate about programming languages",
+    "AboutMe": "About Me",
+    "Contacts": "Contacts",
+    "Experiences": "Experiences",
+    "Socials": "Socials",
+    "and": "and",
+    "ExperienceTitle": "My experience",
+    "ExperienceLabel1": "I started as an IT consultant",
+    "ExperienceLabel2": "now I develop for BRT (one of the most important courier companies in italy)",
+    "ExperienceDesc1": "My career began in March 2023, my first project was about a site where I could reserve an electric scooter sharing",
+    "ExperienceDesc2": "After that with my college colleagues I started a new project to recycle food close to expiration, in this app you can buy discounted food from super markets to avoid waste!",
+    "ExperienceDesc3": "In June 2023 I started working with BRT, which is one of the most important courier companies in italy, and here I learned a lot of new technology",
+    "ExperienceDesc4": "For example Kubernetes, Single Spa, and many programming languages",
+    "ContactMeTitle": "Contact Me",
+    "ContactMeLabel": "Here you can contact me by email or via my links below",
+    "message": "Message",
+    "MySocials": "My Socials",
+    "sendEmail": "Send Email"
 }

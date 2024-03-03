@@ -2,13 +2,11 @@
     <div id="aboutMe" class="text-white card bg-dark p-5 mt-5">
         <div class="row ">
             <div class="col-md-6 ">
-                <h1 id="title">Hi, i'm Mattia Iaria</h1>
-                <label for="title" class="label">Software developer and website designer</label>
+                <h1 id="title">{{'AboutMeTitle' | translate}}</h1>
+                <label for="title" class="label">Software developer {{'and' | translate}} website designer</label>
                 <p>
-                    I was born in Italy in 30/11/2003 and i like the world of computer science
-                     and software development. <br>
-                    My experience in this field starts in March 2023, then i fell in love
-                    about programming language.  
+                    {{"AboutMeDesc1" | translate}}. <br>
+                    {{"AboutMeDesc2" | translate}}.  
                 </p>
             </div>
             <div class="col-md-6">
@@ -20,21 +18,17 @@
 
     <div id="experiences" class="card bg-dark text-white p-5 my-5">
         <h1 id="title">
-            My experience
+            {{"ExperienceTitle" | translate}}
         </h1>
         <label class="label" for="title">
-            Starting as Informatic Consultant, <br>
-            i developed for BRT (an important italian courier company): 
+            {{'ExperienceLabel1' | translate}}, <br>
+            {{'ExperienceLabel2' | translate}}: 
         </label>
         <p>
-            My career started on March 2023, my first job was about a website
-            to book electric scooter in sharing. <br>
-            Then i started with my working colleagues a project to recycle food close to expiration,
-            in this app you can buy discounted food from markets to avoid waste. <br>
-            In June 2023 i started to develop for BRT, 
-            which is one of the most important courier company in Italy,
-            and i learned a lot of things there. <br>
-            For example Kubernetes, Single Spa and a lot of programming languages: 
+            {{'ExperienceDesc1' | translate}} . <br>
+            {{'ExperienceDesc2' | translate}} . <br>
+            {{'ExperienceDesc3' | translate}} . <br>
+            {{'ExperienceDesc4' | translate}}: 
         </p>
         <p class="d-flex row g-2 mt-2">
             @for (item of experiencesList; track $index) {
@@ -52,19 +46,19 @@
 
     <div id="contacts" class="card bg-dark text-white p-5 mb-5">
         <h1 id="title">
-            Contact Me!
+            {{'ContactMeTitle' | translate}}!
         </h1>
         <label for="title" class="label">
-            Here you can contact me by email or via my links below
+            {{'ContactMeLabel' | translate}}
         </label>
         <div class="mt-3" action="">
             <label for="">Email</label>
             <input type="text" class="form-control form-control-sm">
-            <label for="">Message</label>
+            <label class="mt-2" for="">{{'message' | translate}}</label>
             <textarea type="text" class="form-control" rows="4"></textarea>
             <div class="d-flex justify-content-end">
                 <button class="btn-send btn mt-2 email-btn">
-                    Send Email
+                    {{'sendEmail' | translate}}
                 </button>
             </div>
         </div>
@@ -72,7 +66,7 @@
 
     <div id="socials" class="card bg-dark text-white p-5 mb-5">
         <h1 id="title" class="text-center text-sm-start">
-            My Socials!
+            {{'MySocials' | translate }} !
         </h1>
 
         <div class="mt-4 row g-2">

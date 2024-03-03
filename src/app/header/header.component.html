@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg  bg-dark fixed-top">
     <div class="container-fluid ">
-      <a class="navbar-brand text-white pointer btn" href="#">Mattia Portfolio</a>
+      <a class="navbar-brand text-white pointer btn" href="#">Mattia Iaria Portfolio</a>
       
       <div class="d-flex">
         <app-language-drop-down class="d-lg-none flag-dropdown"></app-language-drop-down>
@@ -12,7 +12,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           @for (link of linkList; track $index) {
             <li class="nav-item">
-                <a class="nav-link text-white" href="#{{link.id}}" >{{link.label}}</a>
+                <a class="nav-link text-white" href="#{{link.id}}" >{{link.label | translate}}</a>
             </li>
           }
         </ul>
