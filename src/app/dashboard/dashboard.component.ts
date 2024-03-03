@@ -17,20 +17,20 @@ import { CommonModule } from '@angular/common';
 })
 export class DashboardComponent {
   experiencesList = [
-    {title: 'Kotlin', assetPath: '../../assets/Kotlin_Icon.svg'},
+    {title: 'Kotlin', assetPath: './assets/Kotlin_Icon.svg'},
     {title: 'java', icon: faJava},
-    {title: 'C++', assetPath: '../../assets/cp.svg'},
+    {title: 'C++', assetPath: './assets/cp.svg'},
     {title: 'C', icon: faCopyright},
-    {title: 'Typescript', assetPath: '../../assets/Typescript_logo.svg'},  
+    {title: 'Typescript', assetPath: './assets/Typescript_logo.svg'},  
     {title: 'javascript', icon: faJs},
     {title: 'react', icon: faReact},
     {title: 'angular', icon: faAngular},
     {title: 'spring', icon: faLeaf},
     {title: 'docker', icon: faDocker},
-    {title: 'kubernetes', assetPath: '../../assets/kubernetes-logo.svg'},
-    {title: 'SingleSpa', assetPath: '../../assets/singlespa.svg'},
+    {title: 'kubernetes', assetPath: './assets/kubernetes-logo.svg'},
+    {title: 'SingleSpa', assetPath: './assets/singlespa.svg'},
     {title: 'MySql', icon: faDatabase},
-    {title: 'MongoDB', assetPath: '../../assets/mongodb-icon.svg'},  
+    {title: 'MongoDB', assetPath: './assets/mongodb-icon.svg'},  
   ]
 
   linkedIn = faLinkedin
