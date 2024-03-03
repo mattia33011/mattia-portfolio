@@ -17,8 +17,8 @@ export class LanguageDropDownComponent {
     translate.use(browserLang?.match(/en|it/) ? browserLang : 'en')
   }
 
-  italyPath = "../../assets/italy-flag.svg"
-  ukPath = "../../assets/uk-flag.svg"
+  italyPath = "./assets/italy-flag.svg"
+  ukPath = "./assets/uk-flag.svg"
 
   actualLanguage(){    
     return this.translate.currentLang
