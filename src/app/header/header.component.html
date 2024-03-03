@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg  bg-dark">
+    <div class="container-fluid ">
+      <button class="navbar-brand text-white pointer btn" [routerLink]="''">Mattia Portfolio</button>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          @for (link of linkList; track $index) {
+            <li class="nav-item">
+                <a class="nav-link text-white" [routerLink]="link.href" >{{link.label}}</a>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </nav>
