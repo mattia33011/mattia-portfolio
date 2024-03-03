@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardComponent } from '../card/card.component';
@@ -7,15 +7,27 @@ import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 import { faDatabase, faLeaf } from '@fortawesome/free-solid-svg-icons';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { trigger, transition, query, style, stagger, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [HeaderComponent, FontAwesomeModule, CardComponent, TranslateModule, CommonModule],
+  imports: [ HeaderComponent, FontAwesomeModule, CardComponent, TranslateModule, CommonModule],
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.scss'
+  styleUrl: './dashboard.component.scss',
+  animations: [
+    trigger('cardAnimation', [
+      transition('* => *', [
+        query(':enter', style({ opacity: 0 }), {optional: true}),
+        query(':enter', stagger('300ms', [
+          animate('1s ease-in', style({ opacity: 1 }))
+        ]), {optional: true})
+      ])
+    ])
+  ] 
 })
 export class DashboardComponent {
+
   experiencesList = [
     {title: 'Kotlin', assetPath: './assets/Kotlin_Icon.svg'},
     {title: 'java', icon: faJava},
@@ -43,3 +55,7 @@ export class DashboardComponent {
   ]
 
 }
+function onWindowScroll(e: any) {
+  throw new Error('Function not implemented.');
+}
+
