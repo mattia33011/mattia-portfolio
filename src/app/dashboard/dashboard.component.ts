@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CardComponent } from '../card/card.component';
-import { faAngular, faDocker, faEnvira, faJava, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faDocker, faEnvira, faGithub, faInstagram, faJava, faJs, faLinkedin, faLinkedinIn, faReact, faThreads } from '@fortawesome/free-brands-svg-icons';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 import { faDatabase, faLeaf } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,15 +14,6 @@ import { faDatabase, faLeaf } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './dashboard.component.scss'
 })
 export class DashboardComponent {
-  faJava = faJava
-  faReact = faReact
-  faAngular = faAngular
-  faC = faCopyright
-  faSpring = faEnvira
-  faJs = faJs
-  faDocker = faDocker
-  faSql = faDatabase
-
   experiencesList = [
     {title: 'Kotlin', assetPath: '../../assets/Kotlin_Icon.svg'},
     {title: 'java', icon: faJava},
@@ -38,6 +29,16 @@ export class DashboardComponent {
     {title: 'SingleSpa', assetPath: '../../assets/singlespa.svg'},
     {title: 'MySql', icon: faDatabase},
     {title: 'MongoDB', assetPath: '../../assets/mongodb-icon.svg'},  
+  ]
+
+  linkedIn = faLinkedin
+
+  socialsList = [
+    {title: 'Mattia Iaria', icon: faLinkedinIn, href: 'https://it.linkedin.com/in/mattia-iaria-ba7432275?trk=people-guest_people_search-card'},
+    {title: '@mattiaiaria', icon: faInstagram, href: 'https://www.instagram.com/mattiaiaria/'},
+    {title: '@mattiaiaria', icon: faThreads, href: 'https://www.threads.net/@mattiaiaria'},
+    {title: 'mattia33011', icon: faGithub, href: 'https://github.com/mattia33011'},
+
   ]
 
 }

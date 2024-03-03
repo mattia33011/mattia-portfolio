@@ -49,4 +49,38 @@
             }
         </p>
     </div>
+
+    <div class="card bg-dark text-white p-5 mb-5">
+        <h1 id="title">
+            Contact Me!
+        </h1>
+        <label for="title" class="label">
+            Here you can contact me by email or via my links below
+        </label>
+        <div class="mt-3" action="">
+            <label for="">Email</label>
+            <input type="text" class="form-control form-control-sm">
+            <label for="">Message</label>
+            <textarea type="text" class="form-control" rows="4"></textarea>
+            <div class="d-flex justify-content-end">
+                <button class="btn-send btn mt-2 email-btn">
+                    Send Email
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card bg-dark text-white p-5 mb-5">
+        <h1 id="title">
+            My Socials!
+        </h1>
+
+        <div class="mt-4">
+            @for (item of socialsList; track $index) {
+                <a target="_blank" [href]="item.href" class="btn btn-dark">
+                    <app-card [title]="item.title" [icon]="item.icon" ></app-card>
+                </a>
+            }
+        </div>
+    </div>
 </div>
