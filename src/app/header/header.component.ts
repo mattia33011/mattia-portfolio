@@ -1,26 +1,24 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { LanguageDropDownComponent } from '../language-drop-down/language-drop-down.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink],
+  imports: [LanguageDropDownComponent, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  linkList: LinkListComponent[] = [
-    {href: "", label: "About me"},
-    {href: "/contacts", label: "Contacts"},
-    {href: "/links", label: "Links"},
+  linkList = [
+    {id: "aboutMe", label: "About me"},
+    {id: "contacts", label: "Contacts"},
+    {id: "experiences", label: "Experiences"},
+    {id: "socials", label: "Socials"},
   ]
+
+  
+
 }
 
-class LinkListComponent{
-  constructor(href: string, label: string) {
-    this.href = href
-    this.label = label
-  }
-  href: string
-  label: string
-}
+

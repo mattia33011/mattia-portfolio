@@ -1,5 +1,5 @@
 <div class="container py-5">
-    <div class="text-white card bg-dark p-5">
+    <div id="aboutMe" class="text-white card bg-dark p-5 mt-5">
         <div class="row ">
             <div class="col-md-6 ">
                 <h1 id="title">Hi, i'm Mattia Iaria</h1>
@@ -18,7 +18,7 @@
     </div>
 
 
-    <div class="card bg-dark text-white p-5 my-5">
+    <div id="experiences" class="card bg-dark text-white p-5 my-5">
         <h1 id="title">
             My experience
         </h1>
@@ -50,7 +50,7 @@
         </p>
     </div>
 
-    <div class="card bg-dark text-white p-5 mb-5">
+    <div id="contacts" class="card bg-dark text-white p-5 mb-5">
         <h1 id="title">
             Contact Me!
         </h1>
@@ -70,14 +70,14 @@
         </div>
     </div>
 
-    <div class="card bg-dark text-white p-5 mb-5">
-        <h1 id="title">
+    <div id="socials" class="card bg-dark text-white p-5 mb-5">
+        <h1 id="title" class="text-center text-sm-start">
             My Socials!
         </h1>
 
-        <div class="mt-4">
+        <div class="mt-4 row g-2">
             @for (item of socialsList; track $index) {
-                <a target="_blank" [href]="item.href" class="btn btn-dark">
+                <a target="_blank" [href]="item.href" class="btn btn-dark col-12 col-sm-6 col-md-3">
                     <app-card [title]="item.title" [icon]="item.icon" ></app-card>
                 </a>
             }
