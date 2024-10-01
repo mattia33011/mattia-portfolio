@@ -20,5 +20,7 @@
     "ContactMeLabel": "Here you can contact me by email or via my links below",
     "message": "Message",
     "MySocials": "My Socials",
-    "sendEmail": "Send Email"
+    "sendEmail": "Send Email",
+    "emailSent": "Email Sent!",
+    "sending": "Sending..."
 }
