@@ -1,5 +1,7 @@
 # MattiaPortfolio
 
+To open the deployed site go to https://mattia33011.github.io/mattia-portfolio/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
 
 ## Development server
