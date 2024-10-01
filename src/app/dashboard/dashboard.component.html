@@ -53,11 +53,11 @@
         </label>
         <div class="mt-3" action="">
             <label for="">Email</label>
-            <input type="text" class="form-control form-control-sm">
+            <input [(ngModel)]="emailForm.email" type="text" class="form-control form-control-sm">
             <label class="mt-2" for="">{{'message' | translate}}</label>
-            <textarea type="text" class="form-control" rows="4"></textarea>
+            <textarea [(ngModel)]="emailForm.message" type="text" class="form-control" rows="4"></textarea>
             <div class="d-flex justify-content-end">
-                <button class="btn-send btn mt-2 email-btn">
+                <button #b (click)="sendEmail(b)" class="btn-send btn mt-2 email-btn">
                     {{'sendEmail' | translate}}
                 </button>
             </div>

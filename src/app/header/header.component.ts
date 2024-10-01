@@ -13,8 +13,8 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent {
   linkList = [
     {id: "aboutMe", label: "AboutMe"},
-    {id: "contacts", label: "Contacts"},
     {id: "experiences", label: "Experiences"},
+    {id: "contacts", label: "Contacts"},
     {id: "socials", label: "Socials"},
   ]
 

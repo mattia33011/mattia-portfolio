@@ -19,5 +19,7 @@
     "ContactMeLabel": "Qui puoi contattarmi via email o tramite i link in fondo la pagina",
     "message": "Messaggio",
     "MySocials": "I Miei Social",
-    "sendEmail": "Send Email"
+    "sendEmail": "Invia Email",
+    "emailSent": "Email Inviata!",
+    "sending": "Caricamento..."
 }
